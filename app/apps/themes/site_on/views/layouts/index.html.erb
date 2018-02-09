@@ -12,7 +12,7 @@
     <%= raw the_head %>
 </head>
 <body data-spy="scroll" data-offset="80" <%= 'class="home-page"'.html_safe if is_home? %>>
-
+<%= render partial: 'partials/analytics' %>
  <%= c('header')%>
 
  <!-- ./header -->
