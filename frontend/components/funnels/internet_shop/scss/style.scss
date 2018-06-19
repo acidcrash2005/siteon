@@ -5,6 +5,40 @@
   z-index: 2;
 }
 
+h3.heading{
+  font-size: 24px;
+}
+.variant-block.reverse{
+  justify-content: flex-start;
+}
+
+.text-center-padding{
+  text-align: center;
+  max-width: 760px;
+  margin: auto;
+}
+
+.trump-row{
+  &.reverse{
+    .tramp-row-item:first-child{
+      order: 1;
+    }
+
+    .tramp-row-item{
+      &.right{
+        text-align: left;
+      }
+    }
+  }
+
+  .tramp-row-item{
+    &.right{
+      text-align: right;
+    }
+  }
+}
+
+
 .reviews, .garanty, .slider2 {
   overflow: hidden;
 }
@@ -374,7 +408,7 @@
     position: absolute;
     width: 52px;
     height: 66px;
-    left: 271px;
+    left: 361px;
     bottom: 0px;
     transform: rotateX(180deg) rotateZ(-90deg);
     background: url(../images/arrow_form.png);
@@ -387,6 +421,48 @@
 }
 
 
+
+.pint-doted{
+  &.p1 {
+    padding-left: 135px;
+    @media (max-width: 1024px) {
+      padding-left: 48px
+    }
+  }
+  &.p2 {
+    padding-left: 135px;
+    @media (max-width: 1024px) {
+      padding-left: 41px
+    }
+  }
+  &.p3 {
+    padding-left: 225px;
+    @media (max-width: 1024px) {
+      padding-left: 122px
+    }
+  }
+  &.p4 {
+    padding-left: 375px;
+    @media (max-width: 1024px) {
+      padding-left: 328px
+    }
+
+  }
+  &.p5 {
+    padding-left: 445px;
+    @media (max-width: 1024px) {
+      padding-left: 353px;
+    }
+  }
+  &.p6 {
+    padding-left: 565px;
+    @media (max-width: 1024px) {
+      padding-left: 398px;
+    }
+  }
+
+
+}
 
 .hide-form{
   @extend .success-form-block-hide;

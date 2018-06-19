@@ -144,9 +144,18 @@
   @media (max-width: 544px) {
     width: 100%;
     white-space: normal;
-    padding: 19px 16px;
+    padding: 8px 8px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
+@media (max-width: 544px) {
+  .border-dash{
+    border: 3px dashed #737373;
+    padding: 4px;
+  }
+}
+
 
 .count_down {
   display: flex;

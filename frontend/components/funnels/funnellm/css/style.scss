@@ -477,6 +477,13 @@
 }
 
 @media (max-width: 767px) {
+  .paragraph {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
   .header {
     padding-right: 15px;
     padding-left: 15px;

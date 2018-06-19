@@ -38,29 +38,29 @@ class MainBlock extends Component {
                         <div className="main-content">
                             <h1 className="h1-main"><span className="small-main-h1">Одностраничный</span> <br/>Интернет-магазин
                             </h1>
-                            <h2 className="h2-main">Гарантированное увеличение конверсии &nbsp;с 0,3% до 5% и выше!</h2>
+                            <h2 className="h2-main">Запустим одностраничный интернет-магазин за 30 дней с конверсией более 30% и минимальными расходами на рекламу</h2>
                             <div className="main-icons">
                                 <div className="bilits">
                                     <div className="bulit-item">
                                         <div className="bulit-icon"></div>
-                                        <div className="bulit-title">Быстрые заказы</div>
-                                        <div className="bulit-text">Первая продажа в день запуска рекламы</div>
+                                        <div className="bulit-title">Конверсия от 5 до 30%</div>
+                                        <div className="bulit-text">Продадим даже самый «залежалый» товар заинтересованным покупателям.</div>
                                     </div>
                                     <div className="bulit-item">
                                         <div className="bulit-icon"></div>
-                                        <div className="bulit-title">Новые контакты</div>
-                                        <div className="bulit-text">Каждый новый контакт -потенциальный покупатель</div>
+                                        <div className="bulit-title">Рост прибыли в Х раз </div>
+                                        <div className="bulit-text">Настроим целевой трафик без переплат за клики.</div>
                                     </div>
                                     <div className="bulit-item">
                                         <div className="bulit-icon"></div>
-                                        <div className="bulit-title">Рост прибыли</div>
-                                        <div className="bulit-text">Больше продаж при меньших расходах</div>
+                                        <div className="bulit-title">Экономия на разработке до 75%</div>
+                                        <div className="bulit-text">Создадим серию лендингов под разные товары с минимальным участием программистов.</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="action-block">
-                                <p>Получите бесплатную консультацию и узнайте, подходит ли вам одностраничный интернет-магазин:</p>
-                                <a href="javascript:;" className="btn w-button btn-border consulting-button">Записаться на консультацию</a>
+                                <p>Узнайте, как увеличить продажи с помощью одностраничника на бесплатной консультации</p>
+                                <a href="javascript:;" className="btn w-button btn-border consulting-button">Записаться на бесплатную консультацию</a>
                             </div>
                         </div>
                     </div>

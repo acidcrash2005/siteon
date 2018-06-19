@@ -2,140 +2,302 @@
 
 </div>
 
-<div class="form-subscribe">
+
+<!--<div class="form-subscribe">-->
+  <!--<div class="container small">-->
+    <!--<div class="form-header">-->
+      <!--<h2 class="form-header__h2">Заполните форму и узнайте как повысить конверсию интернет-магазина</h2>-->
+      <!--<div class="lock"><span class="lok-ico"></span>Ваши данные надежно защищены</div>-->
+    <!--</div>-->
+    <!--<div class="w-form">-->
+      <!--<% form = current_site.contact_forms.where({slug: "marketing-form"}).first %>-->
+
+      <!--<% if form.present? %>-->
+        <!--<%= form_for form, url: plugins_cama_contact_form_save_form_path, html: {method: "post", class: "validate-form form", multipart: true} do |f| %>-->
+          <!--<%= hidden_field_tag "id", form.id %>-->
+          <!--<%= hidden_field_tag "format", "json" %>-->
+          <!--<div class="form-group">-->
+            <!--<% name_field = get_form_field(form, "c2") %>-->
+            <!--<div class="icon-input"></div><input class="input-text w-input" name="<%= name_field[:name] %>" type="text" <%= 'required' if name_field[:required].to_bool %> placeholder="<%= name_field[:field_options][:description].translate %>">-->
+            <!--<div class="angle-docore">-->
+              <!--<div class="angle">-->
+                <!--<div class="separator"></div>-->
+                <!--<div class="b1"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tl">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tr">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle br">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<% phone_field = get_form_field(form, "c3") %>-->
+            <!--<div class="icon-input"></div><input class="input-text w-input" name="<%= phone_field[:name] %>" type="tel" <%= 'required' if phone_field[:required].to_bool %>  placeholder="<%= phone_field[:field_options][:description].translate %>">-->
+            <!--<div class="angle-docore">-->
+              <!--<div class="angle">-->
+                <!--<div class="separator"></div>-->
+                <!--<div class="b1"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tl">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tr">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle br">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="form-group">-->
+            <!--<% email_field = get_form_field(form, "c4") %>-->
+            <!--<div class="icon-input"></div><input class="input-text w-input" name="<%= email_field[:name] %>" type="email" <%= 'required' if email_field[:required].to_bool %>  placeholder="<%= email_field[:field_options][:description].translate %>">-->
+            <!--<div class="angle-docore">-->
+              <!--<div class="angle">-->
+                <!--<div class="separator"></div>-->
+                <!--<div class="b1"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tl">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tr">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle br">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+          <!--<input class="who-are-you" type="text" name="who_are_you" value="">-->
+          <!--<div class="fomr-submit"><input type="submit" value="бесплатная консультация"  class="btn w-button">-->
+            <!--<div class="angle-docore">-->
+              <!--<div class="angle">-->
+                <!--<div class="separator"></div>-->
+                <!--<div class="b1"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tl">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle tr">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+              <!--<div class="angle br">-->
+                <!--<div class="b1"></div>-->
+                <!--<div class="separator"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+        <!--<% end %>-->
+        <!--<div class="w-form-done">-->
+          <!--<span class="valid-msg msg-block__sucess"></span>-->
+        <!--</div>-->
+        <!--<div class="w-form-fail">-->
+          <!--<span class="error-msg msg-block__error"></span>-->
+        <!--</div>-->
+      <!--<% end %>-->
+
+
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<div id="hards" class="hards">
   <div class="container small">
-    <div class="form-header">
-      <h2 class="form-header__h2">Заполните форму и узнайте как повысить конверсию интернет-магазина</h2>
-      <div class="lock"><span class="lok-ico"></span>Ваши данные надежно защищены</div>
+    <div class="block-header i-big">
+      <h2 class="heading">Вы – владелец интернет-магазина и столкнулись с такими проблемами:</h2>
     </div>
-    <div class="w-form">
-      <% form = current_site.contact_forms.where({slug: "marketing-form"}).first %>
-
-      <% if form.present? %>
-        <%= form_for form, url: plugins_cama_contact_form_save_form_path, html: {method: "post", class: "validate-form form", multipart: true} do |f| %>
-          <%= hidden_field_tag "id", form.id %>
-          <%= hidden_field_tag "format", "json" %>
-          <div class="form-group">
-            <% name_field = get_form_field(form, "c2") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= name_field[:name] %>" type="text" <%= 'required' if name_field[:required].to_bool %> placeholder="<%= name_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
+    <div class="decor-text">Проблеммы</div>
+    <div class="problem-cols">
+      <div class="problem-item">
+        <div class="row">
+          <div class="col">
+            <div class="pint-doted">
+              <div class="point-decor">
+                <div class="c1">
+                  <div class="c2"></div>
+                </div>
               </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
+              <div class="doted"></div>
             </div>
           </div>
-          <div class="form-group">
-            <% phone_field = get_form_field(form, "c3") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= phone_field[:name] %>" type="tel" <%= 'required' if phone_field[:required].to_bool %>  placeholder="<%= phone_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
+          <div class="col">
+            <div class="problem-item__title">Нет продаж</div>
           </div>
-          <div class="form-group">
-            <% email_field = get_form_field(form, "c4") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= email_field[:name] %>" type="email" <%= 'required' if email_field[:required].to_bool %>  placeholder="<%= email_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-          <input class="who-are-you" type="text" name="who_are_you" value="">
-          <div class="fomr-submit"><input type="submit" value="бесплатная консультация"  class="btn w-button">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-        <% end %>
-        <div class="w-form-done">
-          <span class="valid-msg msg-block__sucess"></span>
         </div>
-        <div class="w-form-fail">
-          <span class="error-msg msg-block__error"></span>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <ul class="w-list-unstyled">
+              <li>- <span class="yellow">Товар плохо продается</span>, но вы не знаете, как повлиять на конверсию сайта? </li>
+            </ul>
+          </div>
         </div>
-      <% end %>
-
-
+      </div>
+      <div class="problem-item">
+        <div class="row">
+          <div class="col">
+            <div class="pint-doted p1">
+              <div class="point-decor">
+                <div class="c1">
+                  <div class="c2"></div>
+                </div>
+              </div>
+              <div class="doted"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="problem-item__title">Брошеные корзины</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <ul class="w-list-unstyled">
+              <li>- <span class="yellow">Покупатели бросают корзину</span>, не совершив покупку?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="problem-item">
+        <div class="row">
+          <div class="col">
+            <div class="pint-doted p3">
+              <div class="point-decor">
+                <div class="c1">
+                  <div class="c2"></div>
+                </div>
+              </div>
+              <div class="doted"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="problem-item__title">Потеря клиентов</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <ul class="w-list-unstyled">
+              <li><span class="yellow">Теряете клиентов</span> — посетители не оставляют свои данные из-за сложной регистрации?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="problem-item">
+        <div class="row">
+          <div class="col">
+            <div class="pint-doted p4">
+              <div class="point-decor">
+                <div class="c1">
+                  <div class="c2"></div>
+                </div>
+              </div>
+              <div class="doted"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="problem-item__title">Потеря клиентов</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <ul class="w-list-unstyled">
+              <li><span class="yellow">Теряете клиентов</span> — посетители не оставляют свои данные из-за сложной регистрации?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="problem-item">
+        <div class="row">
+          <div class="col">
+            <div class="pint-doted p5">
+              <div class="point-decor">
+                <div class="c1">
+                  <div class="c2"></div>
+                </div>
+              </div>
+              <div class="doted"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="problem-item__title">Потеря времени</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <ul class="w-list-unstyled">
+              <li><span class="yellow">Менеджеры тратят время</span> на звонки клиентам, рассказывая о преимуществах товара?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="problem-item">
+        <div class="row">
+          <div class="col">
+            <div class="pint-doted p6">
+              <div class="point-decor">
+                <div class="c1">
+                  <div class="c2"></div>
+                </div>
+              </div>
+              <div class="doted"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="problem-item__title">Дорогая реклама</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <ul class="w-list-unstyled">
+              <li><span class="yellow">Слишком дорогая реклама</span> — продвижение интернет-магазина обходится минимум в 40 грн за 1 клик по высокочастотному запросу. Оставаться на топ-позициях становится все сложнее? </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<div class="quote">
+
+<div class="problem-block">
   <div class="container small">
-    <div class="quote-body">
-      <div class="quote-decor"></div>
-      <p class="paragraph-2">Одностраничный интернет-магазин в кратчайшие сроки привлечет внимание покупателей даже к самому «залежалому» товару. В случае плохого спроса на продукт, нужно просто поместить его на отдельную страницу  и дело сразу пойдет на лад.</p>
-      <p class="paragraph">Дефицит - двигатель торговли!</p>
-    </div>
-    <div class="quote-footer">
-      <div class="wright-top">
-        <div class="wright-name">Максим Ларин</div><img src="<%= theme_img_url "funnel_shop/larin.png" %>" class="wrigther"></div>
-      <div class="wright-type">Владелец сети интернет- магазинов</div>
+    <div class="block-header">
+      <h2 class="heading">Узнайте за Х минут, как продавать товар на 70% эффективнее через одностраничник</h2>
+      <h3 class="heading i-h3">без брошенных корзин, потери контактов и переплат за трафик </h3>
     </div>
   </div>
-  <div class="wrighter_person"></div>
+  <div class="conveer-block">
+    <div class="macbook">
+      <div class="macscreen"><img src="<%= theme_img_url "funnel_shop/problem-screen.png" %>"></div>
+    </div>
+  </div>
 </div>
+
 <div id="choice" class="choice">
   <div class="container small">
     <div class="block-header i-big">
-      <h2 class="heading">Разница одностраничного магазина от обычного</h2>
+      <h2 class="heading">Чем отличается одностраничный интернет-магазин от обычного?</h2>
     </div>
     <div class="choice-row i-title">
       <div class="choice-col">
@@ -154,10 +316,10 @@
     </div>
     <div class="choice-row">
       <div class="choice-col right">
-        <p class="i-opacity-1">Слишком широкий ассортимент может превратить в непосильную задачу даже покупку зубной пасты. Когда у человека слишком много вариантов, он предпочтет самый безопасный из них — <span class="yellow">не выберет ничего</span>.</p>
+        <p class="i-opacity-1">Широкий ассортимент товара заставляет человека сравнивать цены, сомневаться. Как итог —<span class="yellow">покупатель уходит, не выбрав ничего</span>.</p>
       </div>
       <div class="choice-col center">
-        <div class="choice-title__sub">Проблема выбора</div>
+        <div class="choice-title__sub">Продает конкретный товар</div>
         <div class="icon-block">
           <div class="line-block"></div>
           <div class="border-block">
@@ -185,15 +347,17 @@
         </div>
       </div>
       <div class="choice-col">
-        <p class="i-wihte"><span class="yellow">Фокус</span> внимания идет только <span class="yellow">на один товар</span>, возможно с цветовыми или размерными вариациями - меньший выбор значительно повышает продажи.</p>
+        <p class="i-wihte"><span class="yellow">Одностраничник продает 1 товар</span>, описывает его преимущества, модельный ряд,
+          <span class="yellow">не распыляя внимание посетителя и плавно подводит к</span> 1 целевому действию -«заказать». </p>
       </div>
     </div>
     <div class="choice-row">
       <div class="choice-col right">
-        <p class="i-opacity-1">У посетителя интернет-магазина разбегаются глаза, как только он видит многостраничный каталог, сложную навигацию, рекламные баннера, множество акционных предложений. Он <span class="yellow">забывает, зачем</span> же к вам заглянул, и в результате <span class="yellow">может уйти без покупки</span>.</p>
+        <p class="i-opacity-1">Интернет-магазин одновременно продвигает весь товар по разным ключевым запросам. Есть все шансы, что какой-то продукт
+          <span class="yellow">не покупают лишь потому, что его просматривает не целевая аудитория</span>.</p>
       </div>
       <div class="choice-col center">
-        <div class="choice-title__sub">Отвлекающий фактор</div>
+        <div class="choice-title__sub">Привлекает целевой трафик</div>
         <div class="icon-block">
           <div class="line-block"></div>
           <div class="border-block">
@@ -219,15 +383,17 @@
         </div>
       </div>
       <div class="choice-col">
-        <p class="i-wihte">В одностраничном интернет-магазине намеренно <span class="yellow">устраняются все отвлекающие факторы</span>, внимание посетителя акцентируется на товаре и направлен на 1 действие. Потенциальный покупатель сразу понимает, куда он попал и что теперь делать.</p>
+        <p class="i-wihte">Одностраничник продвигается по ключевым запросам только по 1 товару под конкретную целевую аудиторию.
+          <span class="yellow">Конверсия на 5-30% выше, чем у обычного интернет-магазина</span>!</p>
       </div>
     </div>
     <div class="choice-row">
       <div class="choice-col right">
-        <p class="i-opacity-1"><span class="yellow">Громоздкие формы</span> регистрации и  длинная цепочка для оформления заказа - <span class="yellow">отталкивают покупателя</span> от завершения покупки</p>
+        <p class="i-opacity-1">Громоздкие формы регистрации и сложное оформление заказа отталкивают покупателя от завершения покупки. В итоге
+          <span class="yellow">теряются не только деньги, но и огромная база потенциальных клиентов</span>. </p>
       </div>
       <div class="choice-col center">
-        <div class="choice-title__sub">Достижение цели</div>
+        <div class="choice-title__sub">Собирает базу клиентов в 1 клик</div>
         <div class="icon-block">
           <div class="line-block"></div>
           <div class="border-block">
@@ -253,721 +419,276 @@
         </div>
       </div>
       <div class="choice-col">
-        <p class="i-wihte"><span class="yellow">Достаточно оставить</span> свой <span class="yellow">номер телефона</span> и отдел продаж возьмет всю работу по оформлению заказа на себя</p>
+        <p class="i-wihte">Покупателю достаточно оставить свой номер телефона в форме заявки и отдел продаж возьмет всю работу по оформлению заказа на себя. Даже
+          <span class="yellow">если клиент не купил товар после заявки, у вас остается его контакт в базе</span>. </p>
       </div>
     </div>
     <div class="decor-text">Разница</div>
   </div>
   <div class="decor-sep"></div>
 </div>
-<div class="problem-block">
-  <div class="container small">
-    <div class="block-header">
-      <h2 class="heading">в бизнесе «застой»?  продажи не растут?  заявок через Интернет не прибавляется?</h2>
-      <h3 class="heading i-h3">МЫ поможем РЕШИМ ВАШУ ПРОБЛЕМУ!</h3>
-    </div>
-  </div>
-  <div class="conveer-block">
-    <div class="macbook">
-      <div class="macscreen"><img src="<%= theme_img_url "funnel_shop/problem-screen.png" %>"></div>
-    </div>
-  </div>
-</div>
-<div class="form-subscribe i-color-problem">
-  <div class="container small">
-    <div class="form-header">
-      <h2 class="form-header__h2">просто Заполните форму и мы обязательно вам поможем</h2>
-      <div class="lock"><span class="lok-ico"></span>Ваши данные надежно защищены</div>
-    </div>
-    <div class="w-form">
-      <% form = current_site.contact_forms.where({slug: "marketing-form"}).first %>
 
-      <% if form.present? %>
-        <%= form_for form, url: plugins_cama_contact_form_save_form_path, html: {method: "post", class: "validate-form form", multipart: true} do |f| %>
-          <%= hidden_field_tag "id", form.id %>
-          <%= hidden_field_tag "format", "json" %>
-          <div class="form-group">
-            <% name_field = get_form_field(form, "c2") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= name_field[:name] %>" type="text" <%= 'required' if name_field[:required].to_bool %> placeholder="<%= name_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% phone_field = get_form_field(form, "c3") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= phone_field[:name] %>" type="tel" <%= 'required' if phone_field[:required].to_bool %>  placeholder="<%= phone_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% email_field = get_form_field(form, "c4") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= email_field[:name] %>" type="email" <%= 'required' if email_field[:required].to_bool %>  placeholder="<%= email_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-          <input class="who-are-you" type="text" name="who_are_you" value="">
-          <div class="fomr-submit"><input type="submit" value="бесплатная консультация"  class="btn w-button">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-        <% end %>
-        <div class="w-form-done">
-          <span class="valid-msg msg-block__sucess"></span>
-        </div>
-        <div class="w-form-fail">
-          <span class="error-msg msg-block__error"></span>
-        </div>
-      <% end %>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="hards" class="hards">
+<div id="trump" class="trump">
   <div class="container small">
     <div class="block-header i-big">
-      <h2 class="heading">какие потери у ОБЫЧНОГО интернет-магазина?</h2>
+      <h2 class="heading">Хотите узнать, как использовать одностраничник в вашем бизнесе? </h2>
+      <p><span class="yellow">Запишитесь на бесплатную консультацию и мы:</span></p>
     </div>
-    <div class="decor-text">потери</div>
-    <div class="problem-cols">
-      <div class="problem-item">
-        <div class="row">
-          <div class="col">
-            <div class="pint-doted">
-              <div class="point-decor">
-                <div class="c1">
-                  <div class="c2"></div>
-                </div>
-              </div>
-              <div class="doted"></div>
+    <div class="decor-text">бесплатно</div>
+    <div class="trump-row">
+      <div class="tramp-row-item">
+        <div class="trump-item">
+          <div class="trump-container">
+            <h2 class="heading-3">Есть вопросы?</h2>
+            <p>- Ответим на все вопросы.</p>
+            <p>- Обсудим ваш товар и особенности бизнеса.</p>
+          </div>
+          <div class="slider-item__num">1</div>
+        </div>
+        <div class="trump-item">
+          <div class="trump-container">
+            <h2 class="heading-3">Стратегия</h2>
+            <p>- Продумаем стратегию продаж.</p>
+            <p>- Просчитаем стоимость одностраничника за ХХ минут.</p>
+          </div>
+          <div class="slider-item__num">2</div>
+        </div>
+
+        <div class="center">
+          <a href="javascript:;" class="btn w-button btn-border consulting-button">Записаться на бесплатную консультацию<div class="angle-docore">
+            <div class="angle">
+              <div class="separator"></div>
+              <div class="b1"></div>
             </div>
-          </div>
-          <div class="col">
-            <div class="problem-item__title">ТЕРЯЕТСЯ ВРЕМЯ</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">
-            <ul class="w-list-unstyled">
-              <li>- Минимум <span class="big-text yellow">20</span><span class="yellow"> минут</span> менеджеры тратят <span class="yellow">на</span> убеждение <span class="yellow">1</span> <span class="yellow">клиента</span> купить товар, описывая его  преимущества</li>
-              <li>- Минимум <span class="big-text yellow">14</span> <span class="yellow">дней</span> до возможности отследить прямую зависимость между<span class="yellow"> 1 изменением</span> на сайте и показателями конверсии</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="problem-item">
-        <div class="row">
-          <div class="col">
-            <div class="pint-doted p1">
-              <div class="point-decor">
-                <div class="c1">
-                  <div class="c2"></div>
-                </div>
-              </div>
-              <div class="doted"></div>
+            <div class="angle tl">
+              <div class="b1"></div>
+              <div class="separator"></div>
             </div>
-          </div>
-          <div class="col">
-            <div class="problem-item__title">ТЕРЯЮТСЯ ВОЗМОЖНОСТИ</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">
-            <ul class="w-list-unstyled">
-              <li>- Минимум <span class="big-text yellow">30%</span> <span class="yellow">посетителей</span> доводят покупку до корзины, не завершая ее</li>
-              <li>- Минимум <span class="big-text yellow">16%</span> <span class="yellow">посетителей</span> не обращают внимание на акционные баннеры</li>
-              <li>- Минимум <span class="big-text yellow">65%</span> <span class="yellow">заинтересовавшихся</span>, но не оставивших свои контакты из-за сложности регистрации, потеряны навсегда сложности регистрации, <span class="yellow">потеряны навсегда</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="problem-item">
-        <div class="row">
-          <div class="col">
-            <div class="pint-doted p2">
-              <div class="point-decor">
-                <div class="c1">
-                  <div class="c2"></div>
-                </div>
-              </div>
-              <div class="doted"></div>
+            <div class="angle tr">
+              <div class="b1"></div>
+              <div class="separator"></div>
             </div>
-          </div>
-          <div class="col">
-            <div class="problem-item__title">ТЕРЯЮТСЯ ДЕНЬГИ</div>
-          </div>
+            <div class="angle br">
+              <div class="b1"></div>
+              <div class="separator"></div>
+            </div>
+          </div></a>
         </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">
-            <ul class="w-list-unstyled">
-              <li>- Минимум <span class="big-text yellow">70%</span> <span class="yellow">отказов</span> от покупки из-за различных факторов</li>
-              <li>- Минимум <span class="big-text yellow">40</span> <span class="yellow">грн</span> стоит 1 клик по высокочастотному запросу, необходимому для продвижения обычного интернет-магазина</li>
-            </ul>
-          </div>
-        </div>
+
       </div>
+      <div class="tramp-row-item right"><img src="<%= theme_img_url "funnel_shop/trump-img.png" %>"></div>
     </div>
   </div>
 </div>
+
 <div id="gains" class="gains">
   <div class="container small">
     <div class="block-header i-big">
-      <h2 class="heading">ВЫГОДЫ ОДНОСТРАНИЧНОГО ИНТЕРНЕТ-МАГАЗИНА</h2>
+      <h2 class="heading">4 главных преимущества наших одностраничников</h2>
     </div>
 
-    <div class="decor-text">ВЫгоды</div>
-    <div class="text-right-padding">
-      <p>Сайт должен <span class="yellow">эффективно</span> превращать посетителей в покупателей - с этим <span class="yellow">идеально справляется</span> одностраничный интернет-магазин. <br>Клиенту не надо ничего искать дополнительно: <span class="yellow">вся информация</span> о товаре, магазине, оплате и доставке расписана подробно <span class="yellow">на одной странице.</span></p>
-    </div>
-    </div>
+    <div class="decor-text">выгоды</div>
+
+  </div>
 
 
   <div id="trigger1"></div>
-    <div id="pin1">
-      <div class="slider">
-        <div class="swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="slider-item-container">
-                <div  class="slider-item">
+  <div id="pin1">
+    <div class="slider">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
                 <div class="slider-item__mac">
                   <div class="slider-item__mac-icon"></div>
                 </div>
                 <div class="slider-item__content">
                   <div class="slider-item__content-txt">
-                    <h2 class="heading-2">Экспертная консультация:</h2>
-                    <p>Эффективно превращает посетителя в покупателя <span class="yellow">всего</span> за
-                      <span class="yellow">4 шага</span>:</p>
+                    <h2 class="heading-2">Продающая структура</h2>
+                    <p>Посетитель <span class="yellow">становится покупателем</span> всего за 4 шага:</p>
                     <ol class="list-numbers">
-                      <li>Обращает его <span class="yellow">внимание на товар</span></li>
-                      <li><span class="yellow">Заинтересовывает</span> его товаром</li>
-                      <li><span class="yellow">Вызвает желание</span> получить товар</li>
-                      <li> Заставляет <span class="yellow">сделать покупку</span>.</li>
+                      <li>Обращает внимание на товар.</li>
+                      <li>Заинтересовывает.</li>
+                      <li>Вызывает желание получить товар как можно быстрее.</li>
+                      <li>Заставляет сделать покупку.</li>
                     </ol>
                   </div>
                   <div class="slider-item__num">01</div>
                 </div>
               </div>
-              </div>
             </div>
-            <div class="swiper-slide">
-              <div class="slider-item-container">
-                <div  class="slider-item">
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
                 <div class="slider-item__mac">
                   <div class="slider-item__mac-icon"></div>
                 </div>
                 <div class="slider-item__content">
                   <div class="slider-item__content-txt">
-                    <h2 class="heading-2">Забота о клиенте:</h2>
-                    <p><span class="yellow">Все</span> необходимое <span class="yellow">на одной странице</span>:</p>
+                    <h2 class="heading-2">Закрытие всех возражений</h2>
+                    <p>Покупатель получает <span class="yellow">всю информацию на одной странице</span>:</p>
                     <ol class="list-numbers">
-                      <li><span class="yellow">Максимум информации</span> о товаре и его преимуществах,</li>
-                      <li><span class="yellow">Убедительные</span> акции или бонусы</li>
-                      <li><span class="yellow">Исчерпывающая</span> информация об оплате и доставке</li>
-                      <li>Простота оформления <span class="yellow">заказа</span></li>
+                      <li>все о товаре и компании-продавце;</li>
+                      <li>уникальные акции или бонусы;</li>
+                      <li>схема оплаты и доставки товара;</li>
+                      <li>закрытие частых вопросов и страхов, связанных с товаром;</li>
+                      <li>простая форма заказа.</li>
                     </ol>
                   </div>
                   <div class="slider-item__num">02</div>
                 </div>
               </div>
-              </div>
             </div>
-            <div class="swiper-slide">
-              <div class="slider-item-container">
-                <div  class="slider-item">
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
                 <div class="slider-item__mac">
                   <div class="slider-item__mac-icon"></div>
                 </div>
                 <div class="slider-item__content">
                   <div class="slider-item__content-txt">
-                    <h2 class="heading-2">Возможность переубедить:</h2>
-                    <p>Если <span class="yellow">клиент</span> после оформления все же не купил ваш товар, вы сможете его
-                      <span class="yellow">вернуть</span>, предложив акцию или другой товар, ведь у вас остались его контакты.</p>
+                    <h2 class="heading-2">Модель под любой товар</h2>
+                    <p>Сфера вашего бизнеса не имеет значения —
+                      <span class="yellow">грамотно спроектированный одностраничный интернет-магазин</span>, гарантированно увеличит продажи, будь это игрушки, изделия ручной работы, пиццерия, обувь или аквариум для домашних рыбок.</p>
                   </div>
                   <div class="slider-item__num">03</div>
                 </div>
               </div>
-              </div>
             </div>
-            <div class="swiper-slide">
-              <div class="slider-item-container">
-                <div  class="slider-item">
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
                 <div class="slider-item__mac">
                   <div class="slider-item__mac-icon"></div>
                 </div>
                 <div class="slider-item__content">
                   <div class="slider-item__content-txt">
-                    <h2 class="heading-2">Отсутствие ограничений:</h2>
-                    <p><span class="yellow">Сфера</span> вашего <span class="yellow">бизнеса не имеет значения</span> — грамотно спроектированный
-                      <span class="yellow">одностраничный</span> интернет-магазин, гарантированно
-                      <span class="yellow">увеличит продажи</span>, будь это игрушки, изделия ручной работы, пиццерия, обувь или аквариум для домашних рыбок.</p>
+                    <h2 class="heading-2">Экономия времени и денег</h2>
+                    <p><span class="yellow">Работа по недорогим и низкочастотным запросам</span>, а также таргетирование рекламы в разы сокращает расходы на продвижение и увеличивает прибыль. </p>
+                    <p><span class="yellow">Быстрая статистика позволяет мгновенно отследить</span> прямую зависимость между изменениями на сайте и показателем конверсии. Зная это, вы легко сможете влиять на продажи.</p>
+                    <p>Возможность
+                      <span class="yellow">тиражирования сайта под несколько товаров за 25% стоимости</span>, благодаря простой и понятной CMS.</p>
                   </div>
                   <div class="slider-item__num">04</div>
                 </div>
               </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slider-item-container">
-                <div  class="slider-item">
-                <div class="slider-item__mac">
-                  <div class="slider-item__mac-icon"></div>
-                </div>
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">Увеличение прибыли:</h2>
-                    <ol class="list-numbers">
-                      <li><span class="yellow">Конверсия</span> одностраничных сайтов составляет
-                        <span class="yellow">от 3% до 27%</span></li>
-                      <li><span class="yellow">99%</span>зашедших на сайт- <span class="yellow">заинтересованы</span> именно вашим
-                        <span class="yellow">товаром</span>, что повышает возможность быстрой покупки</li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">05</div>
-                </div>
-              </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slider-item-container">
-                <div  class="slider-item">
-                <div class="slider-item__mac">
-                  <div class="slider-item__mac-icon"></div>
-                </div>
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">Экономия времени и денег:</h2>
-                    <ol class="list-numbers">
-                      <li>Работа по <span class="yellow">конкретным</span> релевантным, <span class="yellow">недорогим</span>, низкочастотным
-                        <span class="yellow">запросам</span> + <span class="yellow">Таргетирование</span> рекламы</li>
-                      <li>Возможность <span class="yellow">мгновенно</span> отследить прямую зависимость между изменениями  и показателем
-                        <span class="yellow">конверсии</span>.</li>
-                      <li>Возможноть тиражирования сайта под несколько товаров за
-                        <span class="yellow">25%  стоимости</span></li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">06</div>
-                </div>
-              </div>
-              </div>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
+  </div>
 
 
   <div class="decore-lamp"></div>
   <div class="gains-decor2"></div>
   <div class="gains-decor1"></div>
 </div>
-<div class="form-subscribe i-color-problem">
-  <div class="container small">
-    <div class="form-header">
-      <h2 class="form-header__h2">просто Заполните форму и мы обязательно вам поможем</h2>
-      <div class="lock"><span class="lok-ico"></span>Ваши данные надежно защищены</div>
-    </div>
-    <div class="w-form">
-      <% form = current_site.contact_forms.where({slug: "marketing-form"}).first %>
 
-      <% if form.present? %>
-        <%= form_for form, url: plugins_cama_contact_form_save_form_path, html: {method: "post", class: "validate-form form", multipart: true} do |f| %>
-          <%= hidden_field_tag "id", form.id %>
-          <%= hidden_field_tag "format", "json" %>
-          <div class="form-group">
-            <% name_field = get_form_field(form, "c2") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= name_field[:name] %>" type="text" <%= 'required' if name_field[:required].to_bool %> placeholder="<%= name_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% phone_field = get_form_field(form, "c3") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= phone_field[:name] %>" type="tel" <%= 'required' if phone_field[:required].to_bool %>  placeholder="<%= phone_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% email_field = get_form_field(form, "c4") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= email_field[:name] %>" type="email" <%= 'required' if email_field[:required].to_bool %>  placeholder="<%= email_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
 
-          <input class="who-are-you" type="text" name="who_are_you" value="">
-          <div class="fomr-submit"><input type="submit" value="бесплатная консультация"  class="btn w-button">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-        <% end %>
-        <div class="w-form-done">
-          <span class="valid-msg msg-block__sucess"></span>
-        </div>
-        <div class="w-form-fail">
-          <span class="error-msg msg-block__error"></span>
-        </div>
-      <% end %>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="form-subscribe color1">
-  <div class="container small">
-    <div class="form-header center">
-      <h2 class="form-header__h2">Заполните форму и узнайте как повысить конверсию интернет-магазина</h2>
-    </div>
-    <div class="w-form">
-      <% form = current_site.contact_forms.where({slug: "marketing-form"}).first %>
-
-      <% if form.present? %>
-        <%= form_for form, url: plugins_cama_contact_form_save_form_path, html: {method: "post", class: "validate-form form", multipart: true} do |f| %>
-          <%= hidden_field_tag "id", form.id %>
-          <%= hidden_field_tag "format", "json" %>
-          <div class="form-group">
-            <% name_field = get_form_field(form, "c2") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= name_field[:name] %>" type="text" <%= 'required' if name_field[:required].to_bool %> placeholder="<%= name_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% phone_field = get_form_field(form, "c3") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= phone_field[:name] %>" type="tel" <%= 'required' if phone_field[:required].to_bool %>  placeholder="<%= phone_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% email_field = get_form_field(form, "c4") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= email_field[:name] %>" type="email" <%= 'required' if email_field[:required].to_bool %>  placeholder="<%= email_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-          <input class="who-are-you" type="text" name="who_are_you" value="">
-          <div class="fomr-submit"><input type="submit" value="бесплатная консультация"  class="btn w-button">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-        <% end %>
-        <div class="w-form-done">
-          <span class="valid-msg msg-block__sucess"></span>
-        </div>
-        <div class="w-form-fail">
-          <span class="error-msg msg-block__error"></span>
-        </div>
-      <% end %>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
-    </div>
-  </div>
-</div>
 <div id="trump" class="trump">
   <div class="container small">
     <div class="block-header i-big">
-      <h2 class="heading">особенности одностраничного ИНТЕРНЕТ-МАГАЗИНА</h2>
+      <h2 class="heading">Разработаем одностраничник с возможностями полноценного сайта за ХХ дней</h2>
+      <h3 class="heading"><span class="yellow">при этом вы сами выбираете функционал и управляете контентом</span></h3>
     </div>
-    <div class="decor-text">особенности</div>
+    <div class="decor-text">выгода</div>
     <div class="trump-row">
       <div class="tramp-row-item">
         <div class="trump-item">
           <div class="trump-container">
-            <h2 class="heading-3">Полноценный сайт</h2>
-            <p>Функционирует как полноценный сайт, благодаря созданию <span class="yellow">удобной панели для администирования</span>, позволяющей загружать и редактировать весь контент на нескольких языках.</p>
+            <h2 class="heading-3">УДОБНАЯ CMS</h2>
+            <p>Одностраничник функционирует как полноценный сайт, благодаря удобной панели для администрирования контента. Вы сможете загружать и редактировать весь контент на нескольких языках без программистов.</p>
           </div>
           <div class="slider-item__num">1</div>
         </div>
         <div class="trump-item">
           <div class="trump-container">
-            <h2 class="heading-3">расширенные возможности</h2>
-            <p>Есть возможность загрузки <span class="yellow">различных</span> комплектаций, цветовых вариантов или размеров <span class="yellow">для одного товара</span>.</p>
+            <h2 class="heading-3">РАСШИРЕННЫЙ ФУНКЦИОНАЛ</h2>
+            <p>Есть возможность загрузки различных комплектаций, цветовых вариантов или размеров для одного товара.</p>
           </div>
           <div class="slider-item__num">2</div>
         </div>
       </div>
       <div class="tramp-row-item right"><img src="<%= theme_img_url "funnel_shop/trump-img.png" %>"></div>
     </div>
-  </div>
-</div>
-<div class="profit">
-  <div class="container small">
-    <div class="profit-row">
-      <div class="profit-row-col col1">
-        <div class="profit-img"><img src="<%= theme_img_url "funnel_shop/pro.png" %>" class="image-6"><img src="<%= theme_img_url "funnel_shop/profit2.png" %>" srcset="<%= theme_img_url "funnel_shop/profit2-p-500.png" %> 500w, <%= theme_img_url "funnel_shop/profit2.png" %> 629w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 52vw, (max-width: 991px) 62vw, 48vw" class="profit-img-1">
-          <div class="profit-arrow"></div>
-        </div>
-      </div>
-      <div class="profit-row-col">
-        <div class="profit-text">
-          <div class="profit-decor"></div>
-          <div class="problem-item__title">получайте больше прибыли</div>
-          <p><span class="yellow">Ставьте эксперименты</span>, меняя местами информационные блоки. <br><span class="yellow">Анализируйте эффективность</span> информационных блоков. <br>Получайте больше прибыли.</p>
-          <div class="variant-block">
-            <div class="variant-label">Посетителей за день: <strong>120</strong></div>
-            <div class="profit-sep">{</div>
-            <div class="progress-container">
-              <div class="progress-bar-tem">
-                <div class="progress-bar">
-                  <div class="progress-bar_in" style="width: 25%"></div>
+    <div class="trump-row reverse">
+      <div class="tramp-row-item">
+        <div class="trump-item">
+          <div class="trump-container">
+            <h2 class="heading-3">A/B-ТЕСТИРОВАНИЕ</h2>
+            <p>Ставьте эксперименты, меняя местами информационные блоки и контент на сайте. Анализируйте эффективность изменений, чтобы повысить конверсию и прибыль.</p>
+            <div class="variant-block reverse">
+              <div class="variant-label">Посетителей за день: <strong>120</strong></div>
+              <div class="profit-sep">{</div>
+              <div class="progress-container">
+                <div class="progress-bar-tem">
+                  <div class="progress-bar">
+                    <div class="progress-bar_in" style="width: 25%"></div>
+                  </div>
+                  <div class="progress-bar-text">
+                    <div class="progress-bar-title">Вариант «А»</div>
+                    <div class="progress-bar-text-label">Кол-во покупателей: <strong>19</strong></div>
+                  </div>
                 </div>
-                <div class="progress-bar-text">
-                  <div class="progress-bar-title">Вариант «А»</div>
-                  <div class="progress-bar-text-label">Кол-во покупателей: <strong>19</strong></div>
-                </div>
-              </div>
-              <div class="progress-bar-tem">
-                <div class="progress-bar">
-                  <div class="progress-bar_in" style="width: 55%"></div>
-                </div>
-                <div class="progress-bar-text">
-                  <div class="progress-bar-title">Вариант «B»</div>
-                  <div class="progress-bar-text-label">Кол-во покупателей: <strong>40</strong></div>
+                <div class="progress-bar-tem">
+                  <div class="progress-bar">
+                    <div class="progress-bar_in" style="width: 55%"></div>
+                  </div>
+                  <div class="progress-bar-text">
+                    <div class="progress-bar-title">Вариант «B»</div>
+                    <div class="progress-bar-text-label">Кол-во покупателей: <strong>40</strong></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="trump">
-  <div class="container small">
-    <div class="trump-row p-t">
-      <div class="tramp-row-item">
-        <div class="trump-item">
-          <div class="trump-container">
-            <h2 class="heading-3">Полная информация</h2>
-            <p>Полученная менеджером <span class="yellow">информация</span>  из форм заказов <span class="yellow">содержит подробности</span> как в стандартном интернет-магазине: Название, цвет, размер, цена и т.д.;</p>
-          </div>
           <div class="slider-item__num">3</div>
         </div>
       </div>
-      <div class="tramp-row-item right">
+      <div class="tramp-row-item right"><img src="<%= theme_img_url "funnel_shop/ab.png" %>"></div>
+    </div>
+    <div class="trump-row">
+      <div class="tramp-row-item">
         <div class="trump-item">
           <div class="trump-container">
-            <h2 class="heading-3">интеграция с crm</h2>
-            <p>Возможна <span class="yellow">интеграция с общей CRM системой</span> стандартного интернет-магазина, где <span class="yellow">заказы</span>, приходящие с одностраничного интернет-магазина, <span class="yellow">можно отфильтровать</span>;</p>
+            <h2 class="heading-3">ПОЛНАЯ ИНФОРМАЦИЯ О ЗАКАЗЕ</h2>
+            <p>Менеджер получает заявку на почту с полной информацией по товару как в стандартном интернет-магазине: название товара, цвет, размер, количество, цена и т.д.</p>
           </div>
           <div class="slider-item__num">4</div>
         </div>
+        <div class="trump-item">
+          <div class="trump-container">
+            <h2 class="heading-3">ИНТЕГРАЦИЯ С CRM</h2>
+            <p>Возможна интеграция с общей CRM-системой стандартного интернет-магазина. При этом заказы, приходящие с одностраничного интернет-магазина, можно отфильтровать. </p>
+          </div>
+          <div class="slider-item__num">5</div>
+        </div>
       </div>
+      <div class="tramp-row-item right"><img src="<%= theme_img_url "funnel_shop/mac_info.png" %>"></div>
     </div>
+  </div>
+</div>
+
+<div class="trump">
+  <div class="container small">
     <div id="bonus" class="block-header i-big">
-      <h2 class="heading">БОНУС ОДНОСТРАНИЧНОГО ИНТЕРНЕТ-МАГАЗИНА</h2>
-      <div class="decor-text">ВАЖНО</div>
+      <h2 class="heading">Создадим серию лендингов <span class="yellow">с экономией до 75%</span> на разработке</h2>
+      <div class="decor-text">БОНУС</div>
+      <div class="text-center-padding">
+        <p class="lineh">Благодаря возможности изменять весь контент, начиная с текста и заканчивая картинками, можно создать серию одностраничных интернет-магазинов под разные товары с минимальным вмешательством разработчиков.</p>
+        <p class="lineh">
+          <span class="yellow">Поэтому стоимость каждого следующего одностраничного интернет-магазина для вас составит всего 25% от стоимости первого!</span></p>
+      </div>
+
     </div>
     <div class="bonus-block">
       <div class="trump-row">
@@ -978,307 +699,198 @@
           </div>
         </div>
         <div class="tramp-row-item right">
-          <h2 class="heading-3">это не акция -  это реальность!</h2>
-          <p class="lineh">Благодаря возможности изменять весь контент, начиная с текста и заканчивая картинками, можно создать <span class="yellow">серию одностраничных интернет-магазинов</span>.</p>
-          <p class="lineh">Идеально продуманный и грамотно разработанный одностраничный интернет-магазин, дает возможность <span class="yellow">продажи другого товара</span> с минимальным вмешательством разработчиков. Соответственно стоимость каждого следующего одностраничного интернет-магазина будет составлять всего <span class="text-span-2">25% от стоимости первого!</span></p>
+          <h2 class="heading-3">Вы получаете многофункциональную систему по цене одного сайта</h2>
+          <p class="lineh">Много лендингов — система одна. Синхронизация с 1С, удобное администрирование, быстрая обработка заказов и многое другое.</p>
+          <p class="lineh">
+            <span class="yellow">Узнайте, как начать зарабатывать на 30% больше с помощью серии одностраничников на бесплатной консультации</span></p>
+          <div class="center">
+            <a href="javascript:;" class="btn w-button btn-border consulting-button">Записаться на бесплатную консультацию<div class="angle-docore">
+              <div class="angle">
+                <div class="separator"></div>
+                <div class="b1"></div>
+              </div>
+              <div class="angle tl">
+                <div class="b1"></div>
+                <div class="separator"></div>
+              </div>
+              <div class="angle tr">
+                <div class="b1"></div>
+                <div class="separator"></div>
+              </div>
+              <div class="angle br">
+                <div class="b1"></div>
+                <div class="separator"></div>
+              </div>
+            </div><div class="angle-docore">
+              <div class="angle">
+                <div class="separator"></div>
+                <div class="b1"></div>
+              </div>
+              <div class="angle tl">
+                <div class="b1"></div>
+                <div class="separator"></div>
+              </div>
+              <div class="angle tr">
+                <div class="b1"></div>
+                <div class="separator"></div>
+              </div>
+              <div class="angle br">
+                <div class="b1"></div>
+                <div class="separator"></div>
+              </div>
+            </div></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="gains-decor2"></div>
 </div>
-<div class="form-subscribe i-color-problem">
-  <div class="container small">
-    <div class="form-header">
-      <h2 class="form-header__h2">просто Заполните форму и мы обязательно вам поможем</h2>
-      <div class="lock"><span class="lok-ico"></span>Ваши данные надежно защищены</div>
-    </div>
-    <div class="form-block-3 w-form">
-      <% form = current_site.contact_forms.where({slug: "marketing-form"}).first %>
 
-      <% if form.present? %>
-        <%= form_for form, url: plugins_cama_contact_form_save_form_path, html: {method: "post", class: "validate-form form", multipart: true} do |f| %>
-          <%= hidden_field_tag "id", form.id %>
-          <%= hidden_field_tag "format", "json" %>
-          <div class="form-group">
-            <% name_field = get_form_field(form, "c2") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= name_field[:name] %>" type="text" <%= 'required' if name_field[:required].to_bool %> placeholder="<%= name_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% phone_field = get_form_field(form, "c3") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= phone_field[:name] %>" type="tel" <%= 'required' if phone_field[:required].to_bool %>  placeholder="<%= phone_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <% email_field = get_form_field(form, "c4") %>
-            <div class="icon-input"></div><input class="input-text w-input" name="<%= email_field[:name] %>" type="email" <%= 'required' if email_field[:required].to_bool %>  placeholder="<%= email_field[:field_options][:description].translate %>">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-          <input class="who-are-you" type="text" name="who_are_you" value="">
-          <div class="fomr-submit"><input type="submit" value="бесплатная консультация"  class="btn w-button">
-            <div class="angle-docore">
-              <div class="angle">
-                <div class="separator"></div>
-                <div class="b1"></div>
-              </div>
-              <div class="angle tl">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle tr">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-              <div class="angle br">
-                <div class="b1"></div>
-                <div class="separator"></div>
-              </div>
-            </div>
-          </div>
-
-        <% end %>
-        <div class="w-form-done">
-          <span class="valid-msg msg-block__sucess"></span>
-        </div>
-        <div class="w-form-fail">
-          <span class="error-msg msg-block__error"></span>
-        </div>
-      <% end %>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="total">
-  <div class="container">
-    <h2 class="total-heder">многофункциональность системы</h2>
-    <div class="sub-text">
-      <p class="lineh">Много лендингов — система одна. Синхронизация с 1С, удобное <br>администрирование, быстрая обработка заказов и многое другое.</p><img src="<%= theme_img_url "funnel_shop/functional.png" %>" srcset="<%= theme_img_url "funnel_shop/functional-p-500.png" %> 500w, <%= theme_img_url "funnel_shop/functional.png" %> 948w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 977px) 97vw, 948px"></div>
-  </div>
-</div>
-<div id="quality" class="quality">
+<div class="slider2 slider-t2">
   <div class="container small">
     <div class="block-header i-big">
-      <h2 class="heading">ВСЕГДА МОЩНЫЕ РЕЗУЛЬТАТЫ</h2>
-      <div class="decor-text">КАЧЕСТВО</div>
+      <h2 class="heading">Наши проекты</h2>
+      <p>Одностраничник для интернет-магазина Babyhit — увеличили продажи на 20% за 30 дней </p>
+      <div class="decor-text">пример</div>
     </div>
-    <div class="decore-lamp"></div>
-    <div class="text-right-padding">
-      <p>Одностраничный интерне-магазин от <span class="yellow">SiteOn - это не просто дизайн</span>, верстка и программирование. <br><span class="yellow">Это решение</span> маркетинговых и бизнес-задач: финансовых и нефинансовых. Вы покупаете не просто человеко-часы, <span class="yellow">вы покупаете</span> наш <span class="yellow">опыт, екcпертизу и навык </span>создания качественных сайтов</p>
-      <p class="yellow"><strong>По настоящему мощные результаты дает только комплексный подход к проекту!</strong></p>
-    </div>
-  </div>
-</div>
-<div class="slider2 slider-t1">
-  <div class="container small">
 
-    <div id="trigger2"></div>
-    <div id="pin2">
-        <div class="swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="num-block">
-                <div class="num-block-title">
-                  <div class="num-title-num">01</div>
-                  <div class="num-title-text">маркетинг и аналитические <br>исследования</div>
+
+    <div id="trigger3"></div>
+    <div id="pin3">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
+                <div class="slider-item__mac i-slide1">
+
                 </div>
-                <div class="num-container">
-                  <div class="num-block-container">
-                    <div class="num-inner">
-                      <ol class="list-numbers">
-                        <li>Изучение особенностей бизнеса;</li>
-                        <li>Анализ конкурентов;</li>
-                        <li>Исследования ЦА, ее болей и потребностей;</li>
-                        <li>Разработка стратегии продаж.</li>
-                      </ol>
-                    </div>
+                <div class="slider-item__content">
+                  <div class="slider-item__content-txt">
+                    <h2 class="heading-2">задачи и цели:</h2>
+                    <p><strong>Цель:</strong><br><span class="yellow">Увеличить продажи</span> сезонного товара - колясок-тростей Babyhit Rainbow. </p>
+
+                    <p><strong>Задача:</strong></p>
+                    <ol class="list-numbers">
+                      <li><span class="yellow">Ознакомить</span> покупателей с особенностями и преимуществами колясок.</li>
+                      <li><span class="yellow">Упростить</span> процедуру покупки, по сравнению с интернет-магазином.</li>
+                    </ol>
                   </div>
-                  <div class="dashed"></div>
+                  <div class="slider-item__num">01</div>
                 </div>
-                <div class="num-text">Для каждого проекта мы разрабатываем свою стратегию привлечения клиентов, только после глубинного анализа особенностей Вашего бизнеса и целевой аудитории.</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="num-block">
-                <div class="num-block-title">
-                  <div class="num-title-num">02</div>
-                  <div class="num-title-text">Разработка концепции <br>
-                    прототипирование</div>
-                </div>
-                <div class="num-container">
-                  <div class="num-block-container">
-                    <div class="num-inner">
-                      <ol class="list-numbers">
-                        <li>Использование маркетинговой составляющей;</li>
-                        <li>Разработка прототипа страницы;  </li>
-                        <li>Разработка Технического задания;</li>
-                        <li>Создание УТП (уникального торгового  предложения);</li>
-                        <li>Написание продающих текстов</li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div class="dashed"></div>
-                </div>
-                <div class="num-text">Мы разрабатываем детальный UX прототип для каждого проекта, это позволяет избежать ошибок и составить идеальную структуру страницы перед этапом дизайна.</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="num-block">
-                <div class="num-block-title">
-                  <div class="num-title-num">03</div>
-                  <div class="num-title-text">Разработка уникального <br>
-                    современного дизайна</div>
-                </div>
-                <div class="num-container">
-                  <div class="num-block-container">
-                    <div class="num-inner">
-                      <ol class="list-numbers">
-                        <li>Разработка уникального стиля с учетом Вашей ЦА;</li>
-                        <li>Несколько вариантов стилистики;</li>
-                        <li>Отрисовка отдельного дизайна для мобильной версии</li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div class="dashed"></div>
-                </div>
-                <div class="num-text">Мы не используем шаблоны. Только уникальный дизайн может выделить вас среди конкурентов и дать высокую конверсию.</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="num-block">
-                <div class="num-block-title">
-                  <div class="num-title-num">04</div>
-                  <div class="num-title-text">Качественная профессиональная <br>
-                    верстка</div>
-                </div>
-                <div class="num-container">
-                  <div class="num-block-container">
-                    <div class="num-inner">
-                      <ol class="list-numbers">
-                        <li>Использование новейших технологий верстки</li>
-                        <li>Верстка с использованием всех стандартов;</li>
-                        <li>Оптимизация скорости загрузки страницы;</li>
-                        <li>Адаптация под мобильные устройства</li>
-                        <li>Базовая SEO оптимизация</li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div class="dashed"></div>
-                </div>
-                <div class="num-text">Благодаря новейшим web-технологиям (таким как HTML5, CSS3, jQuery анимация и Parallax) каждый разработанный нами сайт выглядит очень эффектно.</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="num-block">
-                <div class="num-block-title">
-                  <div class="num-title-num">05</div>
-                  <div class="num-title-text">программирование и <br>
-                    интеграция</div>
-                </div>
-                <div class="num-container">
-                  <div class="num-block-container">
-                    <div class="num-inner">
-                      <ol class="list-numbers">
-                        <li>Настройка форм заказов и обратной связи</li>
-                        <li>Подключение форм заказов и обратной связи к CRM</li>
-                        <li>Разработка административной панели</li>
-                        <li>Интеграция с СMS для полного управления сайтом</li>
-                        <li>Интеграция с платежными системами (LiqPay)</li>
-                        <li>Перенос сайта на хостинг</li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div class="dashed"></div>
-                </div>
-                <div class="num-text">Мы настраиваем и тестируем работу сайта на разных устройствах. Благодаря быстрому загрузке и удобному интерфейсу страницы мы добиваемся максимальной конверсии.</div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="num-block">
-                <div class="num-block-title">
-                  <div class="num-title-num">06</div>
-                  <div class="num-title-text">Техническая поддержка <br>
-                    и дополнительные услуги</div>
-                </div>
-                <div class="num-container">
-                  <div class="num-block-container">
-                    <div class="num-inner">
-                      <ol class="list-numbers">
-                        <li>Техническое сопровождение страницы</li>
-                        <li>Обучение пользованию админ-панелью СMS</li>
-                        <li>Видео-мануал по пользованию админ-панелью СMS</li>
-                        <li>Консультации и помощь по настройке рекламы</li>
-                      </ol>
-                    </div>
-                  </div>
-                  <div class="dashed"></div>
-                </div>
-                <div class="num-text">Мы никогда не оставляем наших клиентов на едине  проблемами, которые могут возникнуть. Мы всегда поможем и подскажем как поступить в той или иной ситуации.</div>
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
+                <div class="slider-item__mac i-slide2">
 
+                </div>
+                <div class="slider-item__content">
+                  <div class="slider-item__content-txt">
+                    <h2 class="heading-2">аналитика и концепция:</h2>
+                    <ol class="list-numbers">
+                      <li>Провели маркетинговый анализ. <span class="yellow">Изучили бизнес заказчика</span>, предложения конкурентов и потребности целевой аудитории.</li>
+                      <li><span class="yellow">Собрали</span> семантику</li>
+                      <li>Разработали <span class="yellow">прототип с UX</span> составляющей</li>
+                      <li>Разработали <span class="yellow">техническое задание</span></li>
+                    </ol>
+                  </div>
+                  <div class="slider-item__num">02</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
+                <div class="slider-item__mac i-slide3">
+
+                </div>
+                <div class="slider-item__content">
+                  <div class="slider-item__content-txt">
+                    <h2 class="heading-2">визуализация:</h2>
+                    <ol class="list-numbers">
+                      <li>Разработали <span class="yellow">уникальный дизайн</span> с учетом маркетинговой составляющей.</li>
+                      <li>Создали <span class="yellow">мобильную и планшетную</span> версию дизайна.</li>
+                      <li>Отрисовали <span class="yellow">более 20-ти</span> тематических иконок.</li>
+                    </ol>
+                  </div>
+                  <div class="slider-item__num">03</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item i-center-item">
+
+                <video autoplay loop id="example">
+                  <source src="<%= theme_img_url "funnel_shop/video/example.mp4" %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+
+                <div class="slider-item__content">
+                  <div class="slider-item__content-txt">
+                    <h2 class="heading-2">верстка и анимация:</h2>
+                    <ol class="list-numbers">
+                      <li>Создали <span class="yellow">валидную верстку</span> с использованием новейших технологий.</li>
+                      <li><span class="yellow">«Оживили»</span> сайт при помощи анимации.</li>
+                      <li>Провели базовую <span class="yellow">SEO-оптимизацию</span>.</li>
+                      <li><span class="yellow">Оптимизировали скорость</span> загрузки сайта.</li>
+                    </ol>
+                  </div>
+                  <div class="slider-item__num">04</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
+                <div class="slider-item__mac i-slide5">
+
+                </div>
+                <div class="slider-item__content">
+                  <div class="slider-item__content-txt">
+                    <h2 class="heading-2">адаптивность:</h2>
+                    <ol class="list-numbers">
+                      <li>Создали <span class="yellow">планшетную и мобильную</span> версию одностраничного интернет-магазина.</li>
+                      <li><span class="yellow">Протестировали сайт</span> на всех возможных устройствах и браузерах.</li>
+                    </ol>
+                  </div>
+                  <div class="slider-item__num">05</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-item-container">
+              <div  class="slider-item">
+                <div class="slider-item__mac i-slide6">
+
+                </div>
+                <div class="slider-item__content">
+                  <div class="slider-item__content-txt">
+                    <h2 class="heading-2">программирование:</h2>
+                    <ol class="list-numbers">
+                      <li>Разработали админ-панель, которая загружает и редактирует
+                        <span class="yellow">контент на 2-х языках</span>.</li>
+                      <li>Загрузили <span class="yellow">цветовые варианты</span> одного товара.</li>
+                      <li>Подключили <span class="yellow">сайт к CRM-системе</span> интернет-магазина.</li>
+                      <li>Внедрили <span class="yellow">SEO-модуль</span> (titles, descriptions, keywords).</li>
+                    </ol>
+                  </div>
+                  <div class="slider-item__num">06</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
     </div>
@@ -1286,10 +898,11 @@
   <div class="gains-decor2"></div>
   <div class="gains-decor1"></div>
 </div>
+
 <div class="garanty">
   <div class="container small">
     <div class="block-header i-big">
-      <h2 class="heading">сотрудничать с нами безопасно</h2>
+      <h2 class="heading">С SiteOn надежно</h2>
       <div class="decor-text">гарантии</div>
     </div>
     <div class="cols-4">
@@ -1320,158 +933,21 @@
     </div>
   </div>
 </div>
-<div class="slider2 slider-t2">
+
+<div class="quote">
   <div class="container small">
-    <div class="block-header i-big">
-      <h2 class="heading">Пример работы</h2>
-      <p><span class="yellow">Как мы делали одностраничник  для интернет-магазина Babyhit <br>Ссылка на сайт - https://babyhit-rainbow.com.ua/</span></p>
-      <div class="decor-text">РЕЗУЛЬТАТ</div>
+    <div class="quote-body">
+      <div class="quote-decor"></div>
+      <p class="paragraph-2">Одностраничный интернет-магазин в кратчайшие сроки привлечет внимание покупателей даже к самому «залежалому» товару. В случае плохого спроса на продукт, нужно просто поместить его на отдельную страницу  и дело сразу пойдет на лад.</p>
+      <p class="paragraph">Дефицит - двигатель торговли!</p>
     </div>
-
-
-
-
-    <div id="trigger3"></div>
-    <div id="pin3">
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="slider-item-container">
-              <div  class="slider-item">
-                <div class="slider-item__mac i-slide1">
-
-                </div>
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">задачи и цели:</h2>
-                    <p><strong>Цель:</strong><br><span class="yellow">Увеличение продаж</span> сезонного товара - колясок-тростей Babyhit Rainbow</p>
-
-                    <p><strong>Задача:</strong></p>
-                    <ol class="list-numbers">
-                      <li><span class="yellow">Ознакомить</span> покупателей с особенностями и преимуществами колясок.</li>
-                      <li><span class="yellow">Упростить</span> процедуру покупки, по сравнению с интернет-магазином.</li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">01</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider-item-container">
-              <div  class="slider-item">
-                <div class="slider-item__mac i-slide2">
-
-                </div>
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">аналитика и концепция:</h2>
-                    <ol class="list-numbers">
-                      <li>Проведены <span class="yellow">маркетинговые исследования бизнеса</span> заказчика, конкурентов, целевой аудитории</li>
-                      <li><span class="yellow">Собрана</span> семантика</li>
-                      <li>Разработан <span class="yellow">прототип с UX</span> составляющей</li>
-                      <li>Разработано <span class="yellow">техническое задание</span></li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">02</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider-item-container">
-              <div  class="slider-item">
-                <div class="slider-item__mac i-slide3">
-
-                </div>
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">визуализация:</h2>
-                    <ol class="list-numbers">
-                      <li>Создан <span class="yellow">уникальный дизайн</span>, с учетом маркетинговой составляющей</li>
-                      <li>Разработаны <span class="yellow">мобильная и планшетная версии</span> дизайна</li>
-                      <li>Дизайн торгового предложения, для <span class="yellow">уселения маркетинга</span></li>
-                      <li>Отрисовано  более 20-ти иконок</li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">03</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider-item-container">
-              <div  class="slider-item i-center-item">
-
-                <video autoplay loop id="example">
-                  <source src="<%= theme_img_url "funnel_shop/video/example.mp4" %>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                </video>
-
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">верстка и анимация:</h2>
-                    <ol class="list-numbers">
-                      <li>Создана <span class="yellow">качественная валидная верстка</span> с использованием новейших технологий</li>
-                      <li>Сайт «оживлен» при помощи множества <span class="yellow">анимационных эффектов</span></li>
-                      <li>Проведена базовая <span class="yellow">SEO оптимизация</span></li>
-                      <li>Оптимизированна <span class="yellow">скорость загрузки сайта</span></li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">04</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider-item-container">
-              <div  class="slider-item">
-                <div class="slider-item__mac i-slide5">
-
-                </div>
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">адаптивность:</h2>
-                    <ol class="list-numbers">
-                      <li>Созданы <span class="yellow">планшетная и мобильная версии</span> одностраничниого интернет-магазина</li>
-                      <li>Сайт <span class="yellow">протестирован на всех возможных устройствах</span> и во всех браузерах</li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">05</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider-item-container">
-              <div  class="slider-item">
-                <div class="slider-item__mac i-slide6">
-
-                </div>
-                <div class="slider-item__content">
-                  <div class="slider-item__content-txt">
-                    <h2 class="heading-2">программирование:</h2>
-                    <ol class="list-numbers">
-                      <li><span class="yellow">Админ-панель</span>, загружает и редактирует контент на 2-х языках;</li>
-                      <li><span class="yellow">Загрузка цветовых вариантов</span> одного товара;</li>
-                      <li><span class="yellow">Интеграция с CRM</span> системой интернет-магазина</li>
-                      <li>Внедрен <span class="yellow">SEO модуль</span>(titles, descriptions, keywords)</li>
-                    </ol>
-                  </div>
-                  <div class="slider-item__num">06</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    <div class="quote-footer">
+      <div class="wright-top">
+        <div class="wright-name">Максим Ларин</div><img src="<%= theme_img_url "funnel_shop/larin.png" %>" class="wrigther"></div>
+      <div class="wright-type">Владелец сети интернет- магазинов</div>
     </div>
   </div>
-  <div class="gains-decor2"></div>
-  <div class="gains-decor1"></div>
+  <div class="wrighter_person"></div>
 </div>
 <div id="reviews" class="reviews">
   <div class="container small">
@@ -1572,10 +1048,175 @@
     </div>
   </div>
 </div>
+
+<div id="quality" class="quality">
+  <div class="container small">
+    <div class="block-header i-big">
+      <h2 class="heading">6 шагов к результату</h2>
+      <p>Комплексный подход, который обеспечивает продажи с первого дня запуска рекламы</p>
+      <div class="decor-text">КАЧЕСТВО</div>
+    </div>
+    <div class="decore-lamp"></div>
+  </div>
+</div>
+<div class="slider2 slider-t1">
+  <div class="container small">
+
+    <div id="trigger2"></div>
+    <div id="pin2">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="num-block">
+              <div class="num-block-title">
+                <div class="num-title-num">01</div>
+                <div class="num-title-text">МАРКЕТИНГОВЫЕ <br>исследования</div>
+              </div>
+              <div class="num-container">
+                <div class="num-block-container">
+                  <div class="num-inner">
+                    <ol class="list-numbers">
+                      <li>Изучаем особенности бизнеса.</li>
+                      <li>Анализируем конкурентов.</li>
+                      <li>Исследуем ЦА, ее боли и потребности.</li>
+                      <li>Разрабатываем стратегию продаж.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="dashed"></div>
+              </div>
+              <div class="num-text">Для каждого проекта мы создаем свою стратегию привлечения клиентов после глубокого анализа бизнеса и целевой аудитории.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="num-block">
+              <div class="num-block-title">
+                <div class="num-title-num">02</div>
+                <div class="num-title-text">КОНЦЕПЦИЯ И ПРОТОТИП</div>
+              </div>
+              <div class="num-container">
+                <div class="num-block-container">
+                  <div class="num-inner">
+                    <ol class="list-numbers">
+                      <li>Делаем прототип страницы с маркетинговой составляющей.</li>
+                      <li>Создаем техническое задание.</li>
+                      <li>Пишем УТП (уникальное торговое предложение) и продающие тексты.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="dashed"></div>
+              </div>
+              <div class="num-text">Разрабатываем детальный UX прототип для каждого проекта. Это позволяет избежать ошибок и составить идеальную структуру страницы перед дизайном.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="num-block">
+              <div class="num-block-title">
+                <div class="num-title-num">03</div>
+                <div class="num-title-text">СОВРЕМЕННЫЙ ДИЗАЙН БЕЗ ШАБЛОНОВ</div>
+              </div>
+              <div class="num-container">
+                <div class="num-block-container">
+                  <div class="num-inner">
+                    <ol class="list-numbers">
+                      <li>Уникальный стиль с учетом вашей ЦА.</li>
+                      <li>Несколько вариантов стилистики.</li>
+                      <li>Отрисовка отдельного дизайна для мобильной версии.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="dashed"></div>
+              </div>
+              <div class="num-text">Только уникальный дизайн может выделить вас среди конкурентов и дать высокую конверсию.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="num-block">
+              <div class="num-block-title">
+                <div class="num-title-num">04</div>
+                <div class="num-title-text">КАЧЕСТВЕННАЯ ПРОФЕССИОНАЛЬНАЯ ВЕРСТКА </div>
+              </div>
+              <div class="num-container">
+                <div class="num-block-container">
+                  <div class="num-inner">
+                    <ol class="list-numbers">
+                      <li>Используем новейшие технологии верстки.</li>
+                      <li>Верстаем, используя все стандарты.</li>
+                      <li>Оптимизируем скорость загрузки страницы.</li>
+                      <li>Адаптируем под мобильные устройства.</li>
+                      <li>Базовая SEO оптимизация.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="dashed"></div>
+              </div>
+              <div class="num-text">Ваш сайт будет выглядеть эффектно, благодаря новейшим web-технологиям (HTML5, CSS3, jQuery анимация и Parallax).</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="num-block">
+              <div class="num-block-title">
+                <div class="num-title-num">05</div>
+                <div class="num-title-text">ПРОГРАММИРОВАНИЕ И ИНТЕГРАЦИИ </div>
+              </div>
+              <div class="num-container">
+                <div class="num-block-container">
+                  <div class="num-inner">
+                    <ol class="list-numbers">
+                      <li>Настраиваем форму заказов и обратной связи.</li>
+                      <li>Подключаем форму заказов и обратной связи к CRM.</li>
+                      <li>Разрабатываем административную панель</li>
+                      <li>Интегрируем СMS для полного управления сайтом.</li>
+                      <li>Подключаем платежные системы (LiqPay).</li>
+                      <li>Переносим сайт на хостинг.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="dashed"></div>
+              </div>
+              <div class="num-text">Настраиваем и тестируем работу сайта на разных устройствах. Благодаря быстрой загрузке и удобному интерфейсу страницы, добиваемся максимальной конверсии.</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="num-block">
+              <div class="num-block-title">
+                <div class="num-title-num">06</div>
+                <div class="num-title-text">ТЕХНИЧЕСКАЯ ПОДДЕРЖКА </div>
+              </div>
+              <div class="num-container">
+                <div class="num-block-container">
+                  <div class="num-inner">
+                    <ol class="list-numbers">
+                      <li>Обеспечиваем техническое сопровождение страницы.</li>
+                      <li>Обучаем работе с админ-панелью СMS.</li>
+                      <li>Предоставляем видео-мануал по пользованию админ-панели СMS.</li>
+                      <li>Помогаем с настройкой рекламы.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="dashed"></div>
+              </div>
+              <div class="num-text">После сдачи проекта оперативно консультируем и помогаем по любым техническим вопросам.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="gains-decor2"></div>
+  <div class="gains-decor1"></div>
+</div>
+
 <div id="price" class="quality">
   <div class="container small">
     <div class="block-header i-big minus">
-      <h2 class="heading">Выгодная инвестиция</h2>
+      <h2 class="heading">Выберите свой тариф</h2>
       <div class="decor-text">цена</div>
     </div>
     <div class="decore-lamp"></div>
@@ -1592,10 +1233,10 @@
           <div class="table">
             <div class="table-header">
               <div class="tr">
-              <div class="td"></div>
-              <div class="td">VIP</div>
-              <div class="td">NORMAL</div>
-              <div class="td">BASE</div>
+                <div class="td"></div>
+                <div class="td">VIP</div>
+                <div class="td">NORMAL</div>
+                <div class="td">BASE</div>
               </div>
             </div>
             <div class="table-body">
@@ -1698,10 +1339,10 @@
             </div>
             <div class="table-footer">
               <div class="tr">
-              <div class="td"></div>
-              <div class="td">2880$</div>
-              <div class="td">1920$</div>
-              <div class="td">960$</div>
+                <div class="td"></div>
+                <div class="td">2880$</div>
+                <div class="td">1920$</div>
+                <div class="td">960$</div>
               </div>
             </div>
           </div>
@@ -1726,7 +1367,7 @@
           </div></a>
 
           <div class="note">
-            *Стоимость может меняться как в большую, так и в меньшую сторону. в зависимости от требований
+            **Стоимость может меняться как в большую, так и в меньшую сторону, в зависимости от ваших требований.
           </div>
         </div>
 
@@ -1846,8 +1487,74 @@
         </div>
       </div>
     </div>
+
+    <div class="block-header i-big minus">
+      <h2 class="heading">Нет подходящей цены?</h2>
+
+      <div class="text-center-padding">
+        <p><span class="yellow">Давайте обсудим ваш проект. И сделаем бесплатный просчет стоимости одностраничного интернет-магазина с учетом ваших пожеланий за ХХ минут.</span></p>
+      </div>
+      <br>
+      <div class="center">
+        <a href="javascript:;" class="btn w-button btn-border consulting-button">Записаться на бесплатную консультацию<div class="angle-docore">
+          <div class="angle">
+            <div class="separator"></div>
+            <div class="b1"></div>
+          </div>
+          <div class="angle tl">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+          <div class="angle tr">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+          <div class="angle br">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+        </div><div class="angle-docore">
+          <div class="angle">
+            <div class="separator"></div>
+            <div class="b1"></div>
+          </div>
+          <div class="angle tl">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+          <div class="angle tr">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+          <div class="angle br">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+        </div><div class="angle-docore">
+          <div class="angle">
+            <div class="separator"></div>
+            <div class="b1"></div>
+          </div>
+          <div class="angle tl">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+          <div class="angle tr">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+          <div class="angle br">
+            <div class="b1"></div>
+            <div class="separator"></div>
+          </div>
+        </div></a>
+      </div>
+      <div class="decor-text">цена</div>
+    </div>
   </div>
 </div>
+
+
 <div class="last-form">
   <h2 class="heading">ЕСЛИ У ВАС ОСТАЛИСЬ ВОПРОСЫ ИЛИ ВОЗНИКЛИ <br>ПОЖЕЛАНИЯ МЫ С УДОВОЛЬСТВИЕМ ВАС ВЫСЛУШАЕМ!</h2>
   <p>Если вам мало информации на этой странице,  давайте общаться напрямую!</p>
